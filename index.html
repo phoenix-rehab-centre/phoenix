@@ -1,49 +1,60 @@
+<!DOCTYPE html>
 <html>
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-body {
-     background-IMage:
-	 url("hands.png");
-	 background-repeat:no-repeat;
-	background-size: cover;
-	 }
-.h1{
-  color:yellow;
-  font-size: clamp(1.5rem, 5vw, 2.5rem);
-  }
-  
-.h2{
-  color:purple;
-  font-size: clamp(1.5rem, 5vw, 2.5rem);
-  }
-  
-a:visited{
-   color:red;
-   }
-  
-a:hover{
-  color:green;
-  }
-  
- a:link{
-  color:red;
-  }
-  
- a:active{
-  color:white;
-  }
-</style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background-image: url("hands.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    h1.title {
+      text-align: center;
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      color: purple;
+      margin-top: 1rem;
+    }
+
+    .menu {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .menu a {
+      display: block;
+      font-size: clamp(1.2rem, 3vw, 2rem);
+      margin: 1rem 0;
+      text-decoration: none;
+      color: red;
+      transition: color 0.3s ease;
+    }
+
+    .menu a:hover {
+      color: green;
+    }
+
+    .menu a:visited {
+      color: red;
+    }
+
+    .menu a:active {
+      color: white;
+    }
+  </style>
 </head>
+
 <body>
+  <h1 class="title">MENUPAGE</h1>
 
-<div class="h2"><h1 align= "Center">MENUPAGE </H1></div>
-
-<div>
-<div class="h1"><h1 align= "center" ><a href="homepage.html"  align="center" >Homepage</a><br></h1></div>
-
-<div class="h1"><h1 align= "center"><a  href="about us.html">About us</a></h1>
-<div class="h1"><h1 align= "center"><a href="whatwedo.html">What we do</a></h1>
-<div class="h1"><h1 align= "center"><a href="loc.html">Our locations</a></h1>
+  <div class="menu">
+    <a href="homepage.html">Homepage</a>
+    <a href="about us.html">About Us</a>
+    <a href="whatwedo.html">What We Do</a>
+    <a href="loc.html">Our Locations</a>
+  </div>
 </body>
 </html>
