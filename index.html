@@ -6,63 +6,24 @@
     html, body {
       margin: 0;
       padding: 0;
-      overflow: hidden;
-      width: 100vw;
       height: 100vh;
-    }
-
-    body {
-      background-image: url("hands.png");
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: contain;
+      width: 100vw;
+      overflow: hidden; /* 💥 This disables scrollbars */
       background-color: black;
-      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
-    h1.title {
-      text-align: center;
-      font-size: clamp(1.8rem, 4vw, 3rem);
-      color: white;
-      margin-top: 2rem;
-    }
-
-    .menu {
-      text-align: center;
-      margin-top: 2rem;
-    }
-
-    .menu a {
+    .background-img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
       display: block;
-      font-size: clamp(1.2rem, 3vw, 2rem);
-      margin: 1rem 0;
-      text-decoration: none;
-      color: white;
-      transition: color 0.3s ease;
-    }
-
-    .menu a:hover {
-      color: cyan;
-    }
-
-    .menu a:visited {
-      color: white;
-    }
-
-    .menu a:active {
-      color: yellow;
     }
   </style>
 </head>
-
 <body>
-  <h1 class="title">MENUPAGE</h1>
-
-  <div class="menu">
-    <a href="homepage.html">Homepage</a>
-    <a href="about us.html">About Us</a>
-    <a href="whatwedo.html">What We Do</a>
-    <a href="loc.html">Our Locations</a>
-  </div>
+  <img src="hands.png" alt="Centered Background" class="background-img">
 </body>
 </html>
