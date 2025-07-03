@@ -17,41 +17,48 @@
       background-position: center;
       background-repeat: no-repeat;
       font-family: Arial, sans-serif;
-      color: white;
       display: flex;
-      flex-direction: column;
-      align-items: center;
       justify-content: center;
+      align-items: center;
+      color: white;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.6); /* 🔥 Semi-transparent black */
+      padding: 2rem;
+      border-radius: 20px;
       text-align: center;
+      max-width: 90vw;
     }
 
     h1 {
-      font-size: clamp(1.5rem, 5vw, 3rem);
-      margin: 0;
-      color:red;
+      font-size: clamp(2rem, 5vw, 4rem);
+      margin: 0.5rem 0;
     }
 
     .menu a {
       display: block;
-      color: black;
+      color: white;
       text-decoration: none;
-      font-size: clamp(1rem, 4vw, 2rem);
-      margin: 10px 0;
+      font-size: clamp(1.2rem, 4vw, 2rem);
+      margin: 0.5rem 0;
+      transition: color 0.3s ease;
     }
 
     .menu a:hover {
-      color: purple;
+      color: yellow;
     }
   </style>
 </head>
 <body>
-  <h1>MENUPAGE</h1>
-
-  <div class="menu">
-    <a href="homepage.html">Homepage</a>
-    <a href="about us.html">About Us</a>
-    <a href="whatwedo.html">What We Do</a>
-    <a href="loc.html">Our Locations</a>
+  <div class="overlay">
+    <h1>MENUPAGE</h1>
+    <div class="menu">
+      <a href="homepage.html">Homepage</a>
+      <a href="about us.html">About Us</a>
+      <a href="whatwedo.html">What We Do</a>
+      <a href="loc.html">Our Locations</a>
+    </div>
   </div>
 </body>
 </html>
