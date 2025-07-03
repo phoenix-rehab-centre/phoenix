@@ -9,14 +9,14 @@
       width: 100vw;
       height: 100vh;
       overflow: hidden;
-      background-color: black; /* optional fallback */
+      background-color: black;
     }
 
     body {
-      background-image: url("i.jpg");
+      background-image: url("i.JPG");
       background-repeat: no-repeat;
-      background-position: center center;   /* 🎯 centers the background */
-      background-size: contain;             /* 🛡️ full image shown, no cropping */
+      background-position: center center;
+      background-size: contain; /* ✅ Show full background centered */
     }
 
     a.menu-button {
@@ -27,15 +27,14 @@
     }
 
     a.menu-button img {
-      width: 50px; /* adjust size */
-      height: auto;
-      cursor: pointer;
+      display: block;
+      /* ✅ No width/height = keeps image original size */
     }
   </style>
 </head>
 <body>
 
-  <!-- 🧭 Menu image in top-left corner -->
+  <!-- 🎯 Menu image in original size -->
   <a class="menu-button" href="index.html">
     <img src="menu1.png" alt="Menu">
   </a>
