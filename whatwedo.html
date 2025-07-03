@@ -9,28 +9,36 @@
       width: 100vw;
       height: 100vh;
       overflow: hidden;
+      background-color: black; /* optional fallback */
     }
 
     body {
       background-image: url("i.jpg");
       background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      background-position: center center;   /* 🎯 centers the background */
+      background-size: contain;             /* 🛡️ full image shown, no cropping */
     }
 
-    a img {
-      width: 150px; /* optional — adjust as needed */
+    a.menu-button {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      z-index: 10;
+    }
+
+    a.menu-button img {
+      width: 50px; /* adjust size */
       height: auto;
       cursor: pointer;
     }
   </style>
 </head>
 <body>
-  <a href="index.html">
-    <img src="menu1.png" alt="Menu Button">
+
+  <!-- 🧭 Menu image in top-left corner -->
+  <a class="menu-button" href="index.html">
+    <img src="menu1.png" alt="Menu">
   </a>
+
 </body>
 </html>
