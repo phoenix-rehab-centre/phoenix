@@ -13,10 +13,10 @@
     }
 
     body {
-      background-image: url("i.JPG");
+      background-image: url("i.jpg");
       background-repeat: no-repeat;
       background-position: center center;
-      background-size: contain; /* ✅ Show full background centered */
+      background-size: contain;
     }
 
     a.menu-button {
@@ -28,16 +28,10 @@
 
     a.menu-button img {
       display: block;
-      /* ✅ No width/height = keeps image original size */
+      width: auto;
+      height: auto;
+      max-width: 100%; /* ✅ Prevents it from growing too large on mobile */
     }
   </style>
 </head>
 <body>
-
-  <!-- 🎯 Menu image in original size -->
-  <a class="menu-button" href="index.html">
-    <img src="menu1.png" alt="Menu">
-  </a>
-
-</body>
-</html>
