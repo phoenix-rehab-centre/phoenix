@@ -1,22 +1,80 @@
-<HTML>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      background-color: black;
+      font-family: sans-serif;
+    }
 
-<HEAD>
-<STYLE>
- body {
-     background-IMage:
-	 url("m.png");
-	 BACKGROUND-REPEAT:NO-REPEAT;
-	 width:100%;
-	 }
-	 
+    /* Menu icon in top-left corner */
+    .menu-button {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      z-index: 10;
+    }
 
-</STYLE>
-</HEAD>
+    .menu-button img {
+      width: 60px;
+      height: auto;
+      cursor: pointer;
+    }
 
+    /* Title image at the top center */
+    .title {
+      text-align: center;
+      margin-top: 20px;
+    }
 
-<BODY>
-<a href="index.html">
-<img src="menu1.png" ismap>
-</a>
-</BODY>
-</HTML>
+    .title img {
+      width: 200px;
+      height: auto;
+    }
+
+    /* Grid of four images */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      padding: 20px;
+      max-width: 90vw;
+      margin: 0 auto;
+      justify-content: center;
+    }
+
+    .grid img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Menu icon (clickable) -->
+  <a class="menu-button" href="index.html">
+    <img src="menu1.png" alt="Menu">
+  </a>
+
+  <!-- Title image -->
+  <div class="title">
+    <img src="title.png" alt="Title">
+  </div>
+
+  <!-- Four images in a grid -->
+  <div class="grid">
+    <img src="pic1.jpg" alt="Pic 1">
+    <img src="pic2.jpg" alt="Pic 2">
+    <img src="pic3.jpg" alt="Pic 3">
+    <img src="pic4.jpg" alt="Pic 4">
+  </div>
+
+</body>
+</html>
