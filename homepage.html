@@ -34,9 +34,10 @@
     }
 
     .title img {
-      width: 200px;
-      height: auto;
-    }
+  width: 100vw;     /* ✅ Fills the screen width */
+  height: auto;     /* ✅ Keeps original aspect ratio */
+  display: block;   /* ✅ Removes small white gap below image */
+}
 
     /* Grid of four images */
     .grid {
