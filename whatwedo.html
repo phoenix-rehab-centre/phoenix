@@ -1,19 +1,36 @@
+<!DOCTYPE html>
 <html>
 <head>
-<style>
-body {
-     background-IMage:
-	 url("i.jpg");
-	 BACKGROUND-REPEAT:NO-REPEAT;
-	 
-	 }
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+    }
 
+    body {
+      background-image: url("i.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-</style>
+    a img {
+      width: 150px; /* optional — adjust as needed */
+      height: auto;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
-<a href="index.html">
-<img src="menu1.png" ismap>
-</a>
+  <a href="index.html">
+    <img src="menu1.png" alt="Menu Button">
+  </a>
 </body>
 </html>
