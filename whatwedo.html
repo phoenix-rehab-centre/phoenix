@@ -27,11 +27,18 @@
     }
 
     a.menu-button img {
+      width: 60px;      /* ✅ Set fixed width */
+      height: auto;     /* ✅ Maintain aspect ratio */
       display: block;
-      width: auto;
-      height: auto;
-      max-width: 100%; /* ✅ Prevents it from growing too large on mobile */
+      cursor: pointer;
     }
   </style>
 </head>
 <body>
+
+  <a class="menu-button" href="index.html">
+    <img src="menu1.png" alt="Menu">
+  </a>
+
+</body>
+</html>
